@@ -1,0 +1,22 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Bytes.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\UE4\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\Bytes.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesCharacter.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesGameMode.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesHUD.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesProjectile.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\Bytes.init.gen.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesCharacter.gen.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesGameMode.gen.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesHUD.gen.cpp.obj"
+"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\Bytes\BytesProjectile.gen.cpp.obj"
+"E:\UE4\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Bytes\PCLaunch.rc.res"
+"E:\UE4\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"G:\Projects\Game Projects\Unreal Engine\Bytes\Bytes\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Bytes.lib"

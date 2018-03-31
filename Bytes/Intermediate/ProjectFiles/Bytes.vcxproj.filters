@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Bytes.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{93B62B47-D49A-4524-AD8F-7C905A9E106C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Bytes.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\BytesEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{F6779A3A-3B4F-4A06-88FF-0F4B829692A8}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Bytes">
+			<UniqueIdentifier>{55903395-B6ED-4AC4-9803-BCEB6C55B123}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Bytes\Bytes.Build.cs">
+			<Filter>Source\Bytes</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Bytes\Bytes.cpp">
+			<Filter>Source\Bytes</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Bytes\Bytes.h">
+			<Filter>Source\Bytes</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Bytes\BytesCharacter.cpp">
+			<Filter>Source\Bytes</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Bytes\BytesCharacter.h">
+			<Filter>Source\Bytes</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Bytes\BytesGameMode.cpp">
+			<Filter>Source\Bytes</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Bytes\BytesGameMode.h">
+			<Filter>Source\Bytes</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Bytes\BytesHUD.cpp">
+			<Filter>Source\Bytes</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Bytes\BytesHUD.h">
+			<Filter>Source\Bytes</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Bytes\BytesProjectile.cpp">
+			<Filter>Source\Bytes</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Bytes\BytesProjectile.h">
+			<Filter>Source\Bytes</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
