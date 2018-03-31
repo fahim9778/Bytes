@@ -11,6 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -112,6 +113,9 @@ void ABytesCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 {
 	// set up gameplay key bindings
 	check(PlayerInputComponent);
+
+	InputComponent->BindAction("Sprint", IE_Pressed, this, &ABytesCharacter::beginSprint);
+	InputComponent->BindAction("Sprint", IE_Released, this, &ABytesCharacter::endSprint);
 
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
@@ -259,7 +263,11 @@ void ABytesCharacter::MoveForward(float Value)
 	if (Value != 0.0f)
 	{
 		// add movement in that direction
-		AddMovementInput(GetActorForwardVector(), Value);
+		
+		if (isSprinting)
+			Value *= 2;
+
+		AddMovementInput(GetActorForwardVector(), Value / 2);
 	}
 }
 
@@ -268,7 +276,11 @@ void ABytesCharacter::MoveRight(float Value)
 	if (Value != 0.0f)
 	{
 		// add movement in that direction
-		AddMovementInput(GetActorRightVector(), Value);
+
+		if (isSprinting)
+			Value *= 2;
+
+		AddMovementInput(GetActorRightVector(), Value / 2);
 	}
 }
 
@@ -297,4 +309,16 @@ bool ABytesCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInp
 	}
 	
 	return false;
+}
+
+void ABytesCharacter::beginSprint()
+{
+	isSprinting = true;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("YOU'RE SPRINTING!"));
+}
+
+void ABytesCharacter::endSprint() 
+{
+	isSprinting = false;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("YOU'RE NOT SPRINTING!"));
 }
